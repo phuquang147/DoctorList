@@ -20,3 +20,25 @@ C:\Users\pc\OneDrive - Trường ĐH CNTT - University of Information Technology
 C:\Users\pc\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.CopyComplete
 C:\Users\pc\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\DoctorList\DoctorList\obj\Debug\DoctorList.exe
 C:\Users\pc\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\DoctorList\DoctorList\obj\Debug\DoctorList.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\DoctorList.exe.config
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\DoctorList.exe
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\DoctorList.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\MaterialDesignColors.dll
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\MaterialDesignColors.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.AssemblyReference.cache
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\MainWindow.g.cs
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\App.g.cs
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList_MarkupCompile.cache
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList_MarkupCompile.lref
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\App.baml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\MainWindow.baml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.g.resources
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.Properties.Resources.resources
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.GenerateResource.cache
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.CoreCompileInputs.cache
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.CopyComplete
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.exe
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.pdb

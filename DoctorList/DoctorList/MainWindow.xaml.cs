@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -13,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using System.Windows.Controls;
 
 namespace DoctorList
 {
@@ -23,6 +23,7 @@ namespace DoctorList
     {
         public List<Doctor> items = new List<Doctor>();
         public bool isSelected = true;
+        public int CheckedCount;
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string name)
@@ -43,6 +44,7 @@ namespace DoctorList
             get { return dataValue; }
             set { dataValue = value; OnPropertyChanged("DataValue"); }
         }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -55,10 +57,13 @@ namespace DoctorList
             items.Add(new Doctor() { ID = 4, Name = "Nghĩa tay to", Age = 39, Phone = "02323432", Mail = "3@kteam.com", Sex = SexType.Nam, Birthday = (new DateTime(2002, 1, 1)).ToString("dd/mm/yyyy") });
             items.Add(new Doctor() { ID = 5, Name = "Tuấn khỉ", Age = 39, Phone = "02323432", Mail = "3@kteam.com", Sex = SexType.Nam, Birthday = (new DateTime(2002, 1, 1)).ToString("dd/mm/yyyy") });
             datagrid.ItemsSource = items;
+            CheckedCount = 0;
         }
         public enum SexType { Nam, Nữ }
         public class Doctor
         {
+            public bool IsChecked { get; set; }
+
             public int ID { get; set; }
 
             public string Name { get; set; }
@@ -72,6 +77,25 @@ namespace DoctorList
             public SexType Sex { get; set; }
 
             public string Birthday { get; set; }
+        }
+
+        private void AllSelect_Checked(object sender, RoutedEventArgs e)
+        {
+            bool allcheckbox = (AllSelect.IsChecked == true);
+
+        }
+
+        private void SingleCheckbox_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox c = (CheckBox)sender;
+            if (c.IsChecked == true)
+                CheckedCount++;
+            else
+                CheckedCount--;
+            if (CheckedCount == items.Count)
+                AllSelect.IsChecked = true;
+            else
+                AllSelect.IsChecked = false;
         }
     }
 }

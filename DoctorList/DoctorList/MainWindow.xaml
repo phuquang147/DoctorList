@@ -38,11 +38,17 @@
                 </DataGridCheckBoxColumn>-->
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.Header>
-                        <CheckBox IsChecked="{Binding isSelected}"/>
+                        <CheckBox IsThreeState="false"
+                                  Name="AllSelect"
+                                  Checked="AllSelect_Checked"
+                                  Unchecked="AllSelect_Checked"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsSelected}"/>
+                            <CheckBox Checked="SingleCheckbox_Checked" 
+                                      Unchecked="SingleCheckbox_Checked" 
+                                      IsChecked="{Binding IsChecked}"
+                                      />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -173,9 +179,5 @@
                 <!--</materialDesign:DataGridComboBoxColumn>-->
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel>
-            <TextBox Text="{Binding DataValue, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-            <TextBlock Text="{Binding DataValue}" ></TextBlock>
-        </StackPanel>
     </StackPanel>
 </Window>
