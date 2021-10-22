@@ -20,34 +20,17 @@
                   AutoGenerateColumns="False"
                   HeadersVisibility="All">
             <DataGrid.Columns>
-                <!--<DataGridCheckBoxColumn Binding="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                        ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
-                                        EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}" CanUserReorder="False">
-                    <DataGridCheckBoxColumn.Header>
-                        <Border Background="Transparent">
-                            <CheckBox IsChecked="{Binding Ischecked, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked" />
-                        </Border>
-                    </DataGridCheckBoxColumn.Header>
-                    <DataGridCheckBoxColumn.HeaderStyle>
-                        <Style TargetType="{x:Type DataGridColumnHeader}"
-                               BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
-                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-                        </Style>
-                    </DataGridCheckBoxColumn.HeaderStyle>
-                    
-                </DataGridCheckBoxColumn>-->
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.Header>
-                        <CheckBox IsThreeState="false"
+                        <CheckBox IsThreeState="true"
                                   Name="AllSelect"
-                                  Checked="AllSelect_Checked"
-                                  Unchecked="AllSelect_Checked"/>
+                                  Click="AllSelect_Checked"/>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <CheckBox Checked="SingleCheckbox_Checked" 
                                       Unchecked="SingleCheckbox_Checked" 
-                                      IsChecked="{Binding IsChecked}"
+                                      IsChecked="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                       />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
