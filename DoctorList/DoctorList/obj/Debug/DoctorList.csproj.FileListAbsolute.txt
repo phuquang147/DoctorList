@@ -42,3 +42,14 @@ D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.Core
 D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.csproj.CopyComplete
 D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.exe
 D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\DoctorList.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\ResourceXAML\MainResource.baml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\UserControlQ\DoctorListUC.g.cs
+D:\Github Repo\DoctorList\DoctorList\DoctorList\obj\Debug\UserControlQ\DoctorListUC.baml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\Prism.dll
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\Prism.pdb
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\Prism.xml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\System.Windows.Interactivity.dll
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Github Repo\DoctorList\DoctorList\DoctorList\bin\Debug\System.Windows.Interactivity.xml
