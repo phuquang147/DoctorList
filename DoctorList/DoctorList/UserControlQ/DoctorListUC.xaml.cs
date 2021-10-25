@@ -24,13 +24,6 @@ namespace DoctorList
             InitializeComponent();
         }
 
-        //private void AllSelect_Checked(object sender, RoutedEventArgs e)
-        //{
-        //    bool allcheckbox = (AllSelect.IsChecked == true);
-        //    for (int i = 0; i < doctors.Count; i++)
-        //        doctors[i].IsChecked = allcheckbox;
-        //}
-
         //private void SingleCheckbox_Checked(object sender, RoutedEventArgs e)
         //{
         //    AllSelect.IsChecked = null;

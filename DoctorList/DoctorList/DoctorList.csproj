@@ -73,11 +73,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BooleanAndConverter.cs" />
     <Compile Include="UserControlQ\DoctorListUC.xaml.cs">
       <DependentUpon>DoctorListUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
-    <Compile Include="ViewModel\DoctorLisrViewModel.cs" />
+    <Compile Include="ViewModel\DoctorListViewModel.cs" />
     <Page Include="UserControlQ\DoctorListUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,7 +95,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ResourceXAML\MainResource.xaml">
+    <Page Include="Resources\MainResource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

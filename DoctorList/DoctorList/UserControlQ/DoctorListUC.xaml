@@ -25,30 +25,33 @@
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.Header>
-                        <CheckBox IsThreeState="False" Name="AllSelect">
+                        <CheckBox IsThreeState="True" 
+                                  Name="AllSelect" 
+                                  IsChecked="{Binding RelativeSource={RelativeSource AncestorType=UserControl}, 
+                                                        Path=DataContext.IsCheckedAll, 
+                                                        UpdateSourceTrigger=PropertyChanged}">
                             <i:Interaction.Triggers>
-                                <i:EventTrigger>
-                                    <i:InvokeCommandAction Command="{Binding AllCheckedCommand}"
-                                                           CommandParameter="{Binding ElementName=AllSelect}"/>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=DataContext.AllCheckedCommand}"
+                                                           CommandParameter="{Binding ElementName=AllSelect }"/>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </CheckBox>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                                <!--<i:Interaction.Triggers>
+                            <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                      Command="{Binding SingleCheckedCommand}" CommandParameter="asdasd" Name="abc">
+                                <i:Interaction.Triggers>
                                     <i:EventTrigger EventName="Checked">
-                                        <i:InvokeCommandAction Command="{Binding AllCheckedCommand}" >
-                                            <i:InvokeCommandAction.CommandParameter>
-                                                <MultiBinding>
-                                                    <Binding ElementName="AllSelect"/>
-                                                    <Binding ElementName="{Binding ID}"/>
-                                                </MultiBinding>
-                                            </i:InvokeCommandAction.CommandParameter>
-                                        </i:InvokeCommandAction>               
+                                        <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=DataGrid}, Path=DataContext.SingleCheckedCommand}"
+                                                           CommandParameter="{Binding ElementName=abc }"/>
                                     </i:EventTrigger>
-                                </i:Interaction.Triggers>-->
+                                    <i:EventTrigger EventName="Unchecked">
+                                        <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType=DataGrid}, Path=DataContext.SingleCheckedCommand}"
+                                                           CommandParameter="{Binding ElementName=abc }"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
                             </CheckBox>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -63,11 +66,7 @@
                                                    ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
                                                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
                     <materialDesign:DataGridTextColumn.Binding>
-                        <Binding Path="Name">
-                            <Binding.ValidationRules>
-                                <!--<domain:NotEmptyValidationRule xmlns:domain="clr-namespace:MaterialDesignDemo.Domain" />-->
-                            </Binding.ValidationRules>
-                        </Binding>
+                        <Binding Path="Name"/>
                     </materialDesign:DataGridTextColumn.Binding>
                 </materialDesign:DataGridTextColumn>
                 <materialDesign:DataGridTextColumn Header="Giới tính"
@@ -75,22 +74,14 @@
                                                    ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
                                                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
                     <materialDesign:DataGridTextColumn.Binding>
-                        <Binding Path="Sex">
-                            <Binding.ValidationRules>
-                                <!--<domain:NotEmptyValidationRule xmlns:domain="clr-namespace:MaterialDesignDemo.Domain" />-->
-                            </Binding.ValidationRules>
-                        </Binding>
+                        <Binding Path="Sex"/>
                     </materialDesign:DataGridTextColumn.Binding>
                 </materialDesign:DataGridTextColumn>
                 <DataGridTextColumn Header="Tuổi"
                                     ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
                                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
                     <DataGridTextColumn.Binding>
-                        <Binding Path="Age">
-                            <Binding.ValidationRules>
-                                <!--<domain:NotEmptyValidationRule xmlns:domain="clr-namespace:MaterialDesignDemo.Domain" />-->
-                            </Binding.ValidationRules>
-                        </Binding>
+                        <Binding Path="Age"/>
                     </DataGridTextColumn.Binding>
                 </DataGridTextColumn>
                 <materialDesign:DataGridTextColumn Binding="{Binding Phone}"
